@@ -32,6 +32,59 @@
   color: #333;
 }
 
+/* DaaS Section */
+.daas-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.daas-list li {
+  padding: 5px 0;
+  position: relative;
+  padding-left: 20px;
+}
+
+.daas-list li:before {
+  content: "\f00c";
+  font-family: FontAwesome;
+  position: absolute;
+  left: 0;
+  color: #3fcdc7;
+}
+
+.benefit-box {
+  padding: 20px;
+  border-radius: 8px;
+  transition: all 0.3s;
+}
+
+.benefit-box i {
+  font-size: 40px;
+  color: #3fcdc7;
+  margin-bottom: 15px;
+}
+
+.benefit-box:hover {
+  transform: translateY(-5px);
+}
+
+/* DaaS Section Image Adjustments */
+#testimonials .daas-img {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+#testimonials .daas-img img {
+  max-width: 250px; /* Adjust this value to control image size */
+  height: auto;
+  object-fit: contain;
+}
+
+.icon i {
+  font-size: 2.5em; /* Increases icon size by 250% */
+}
+
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
