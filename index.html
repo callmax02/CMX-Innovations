@@ -67,10 +67,18 @@
           <ul>
             <li class="active"><a href="#intro">Home</a></li>
             <li><a href="#about">About Us</a></li>
-            <li><a href="#services">Services</a></li>
+            <li class="drop-down">
+              <a href="#services">Services</a>
+              <ul>
+                <li><a href="#">SaaS</a></li>
+                <li><a href="#">DaaS</a></li>
+                <li><a href="#">Web Hosting</a></li>
+                <li><a href="#" class="disabled">Helpdesk</a></li>
+              </ul>
+            </li>
             <li><a href="#why-us">Industries</a></li>
             <li><a href="#clients">Technologies</a></li>
-            <li><a href="#testimonials">DaaS</a></li>
+            <li><a href="#testimonials">Use Cases</a></li>
             <li><a href="#contact">Contact Us</a></li>
           </ul>
         </nav>
@@ -90,8 +98,8 @@
 
         <div class="intro-info">
           <h2>
-            Flexible, Scalable <span>Developers Available On-Demand</span> for
-            Any Software Project
+            <span>Agile Talent & Smart Solutions</span> - Scalable, On-Demand,
+            and Tailored for Your Software & Data Needs!
           </h2>
           <div>
             <a href="#about" class="btn-get-started scrollto">Get Started</a>
@@ -170,18 +178,18 @@
           <header class="section-header">
             <h3>Services</h3>
             <p>
-              Innovative SaaS and DaaS solutions to enhance business efficiency
-              and intelligence.
+              Innovative solutions to enhance business efficiency
+              and intelligence.
             </p>
           </header>
 
           <div class="row services-container">
             <a
-              href="#why-us"
+              href="#clients"
               class="col-md-6 service-item saas-section scrollto"
             >
               <div class="service-heading">
-                <h4>Software-as-a-Service (SaaS)</h4>
+                <h4>SAAS - Software Development Solutions</h4>
               </div>
               <div class="service-overlay">
                 <div class="service-content">
@@ -193,11 +201,11 @@
               </div>
             </a>
             <a
-              href="#clients"
+              href="#testimonials"
               class="col-md-6 service-item daas-section scrollto"
             >
               <div class="service-heading">
-                <h4>Data-as-a-Service (DaaS)</h4>
+                <h4>DAAS - Data Processing and Analytics Solutions</h4>
               </div>
               <div class="service-overlay">
                 <div class="service-content">
@@ -211,76 +219,6 @@
           </div>
         </div>
       </section>
-      <!-- #services -->
-
-      <!--==========================
-      Services Section
-    ============================-->
-      <!--
-      <section id="services" class="section-bg">
-        <div class="container">
-          <header class="section-header">
-            <h3>Services</h3>
-            <p>
-              Innovative SaaS and DaaS solutions to enhance business efficiency
-              and intelligence.
-            </p>
-          </header>
-
-          <div class="row">
-            <div
-              class="col-md-6 col-lg-5 offset-lg-1 wow bounceInUp"
-              data-wow-duration="1.4s"
-            >
-              <div class="box">
-                <div class="icon">
-                  <i class="ion-ios-people-outline" style="color: #ff689b"></i>
-                </div>
-                <h4 class="title"><a href="">HRIS</a></h4>
-                <p class="description">
-                  Our cloud-based HRIS streamlines HR management by automating
-                  records, payroll, benefits, and compliance.
-                </p>
-              </div>
-            </div>
-            <div
-              class="col-md-6 col-lg-5 wow bounceInUp"
-              data-wow-duration="1.4s"
-            >
-              <div class="box">
-                <div class="icon">
-                  <i class="ion-ios-clock-outline" style="color: #e9bf06"></i>
-                </div>
-                <h4 class="title"><a href="">Timekeeping</a></h4>
-                <p class="description">
-                  Our cloud-based Timekeeping service accurately tracks work
-                  hours, attendance, and scheduling.
-                  <br />
-                  &nbsp;
-                </p>
-              </div>
-            </div>
-
-            <div
-              class="col-md-6 col-lg-5 offset-lg-3 wow bounceInUp"
-              data-wow-delay="0.1s"
-              data-wow-duration="1.4s"
-            >
-              <div class="box">
-                <div class="icon">
-                  <i class="ion-ios-book-outline" style="color: #3fcdc7"></i>
-                </div>
-                <h4 class="title"><a href="">E-Learning</a></h4>
-                <p class="description">
-                  Our E-learning service offers a cloud-based platform for
-                  interactive training and real-time progress tracking.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      -->
       <!-- #services -->
 
       <!--==========================
@@ -392,9 +330,187 @@
       </section>
 
       <!--==========================
-      Technologies Section
+      SaaS Section
     ============================-->
       <section id="clients">
+        <div class="container">
+          <div class="section-header">
+            <h3>Software Development Solutions</h3>
+            <p>
+              Comprehensive Software-as-a-Service solutions for modern business
+              needs
+            </p>
+          </div>
+
+          <div class="accordion" id="saasAccordion">
+            <!-- Application Development -->
+            <div class="card">
+              <div class="card-header" id="headingOne">
+                <h2 class="mb-0">
+                  <button
+                    class="btn btn-link"
+                    type="button"
+                    data-toggle="collapse"
+                    data-target="#collapseOne"
+                    aria-expanded="true"
+                    aria-controls="collapseOne"
+                  >
+                    Application Development
+                  </button>
+                </h2>
+              </div>
+              <div
+                id="collapseOne"
+                class="collapse show"
+                aria-labelledby="headingOne"
+                data-parent="#saasAccordion"
+              >
+                <div class="card-body">
+                  End-to-end development of scalable cloud applications using
+                  modern frameworks. We specialize in creating customized SaaS
+                  solutions with microservices architecture and API
+                  integrations.
+                </div>
+              </div>
+            </div>
+
+            <!-- Application Support -->
+            <div class="card">
+              <div class="card-header" id="headingTwo">
+                <h2 class="mb-0">
+                  <button
+                    class="btn btn-link collapsed"
+                    type="button"
+                    data-toggle="collapse"
+                    data-target="#collapseTwo"
+                    aria-expanded="false"
+                    aria-controls="collapseTwo"
+                  >
+                    Application Support
+                  </button>
+                </h2>
+              </div>
+              <div
+                id="collapseTwo"
+                class="collapse"
+                aria-labelledby="headingTwo"
+                data-parent="#saasAccordion"
+              >
+                <div class="card-body">
+                  24/7 maintenance and support services including performance
+                  optimization, security updates, and feature enhancements.
+                  Proactive monitoring and SLA-driven support agreements.
+                </div>
+              </div>
+            </div>
+
+            <!-- Cloud, Infrastructure and CyberSecurity -->
+            <div class="card">
+              <div class="card-header" id="headingThree">
+                <h2 class="mb-0">
+                  <button
+                    class="btn btn-link collapsed"
+                    type="button"
+                    data-toggle="collapse"
+                    data-target="#collapseThree"
+                    aria-expanded="false"
+                    aria-controls="collapseThree"
+                  >
+                    Cloud, Infrastructure and CyberSecurity
+                  </button>
+                </h2>
+              </div>
+              <div
+                id="collapseThree"
+                class="collapse"
+                aria-labelledby="headingThree"
+                data-parent="#saasAccordion"
+              >
+                <div class="card-body">
+                  Secure cloud infrastructure solutions featuring multi-cloud
+                  management, DevSecOps integration, and compliance auditing.
+                  Enterprise-grade security with real-time threat detection.
+                </div>
+              </div>
+            </div>
+
+            <!-- Quality Assurance -->
+            <div class="card">
+              <div class="card-header" id="headingFour">
+                <h2 class="mb-0">
+                  <button
+                    class="btn btn-link collapsed"
+                    type="button"
+                    data-toggle="collapse"
+                    data-target="#collapseFour"
+                    aria-expanded="false"
+                    aria-controls="collapseFour"
+                  >
+                    Quality Assurance
+                  </button>
+                </h2>
+              </div>
+              <div
+                id="collapseFour"
+                class="collapse"
+                aria-labelledby="headingFour"
+                data-parent="#saasAccordion"
+              >
+                <div class="card-body">
+                  Comprehensive testing services including functional testing,
+                  load testing, security penetration tests, and debugging.
+                  Continuous quality monitoring throughout the development
+                  lifecycle.
+                </div>
+              </div>
+            </div>
+
+            <!-- Devops on Demand -->
+            <div class="card">
+              <div class="card-header" id="headingFive">
+                <h2 class="mb-0">
+                  <button
+                    class="btn btn-link collapsed"
+                    type="button"
+                    data-toggle="collapse"
+                    data-target="#collapseFive"
+                    aria-expanded="false"
+                    aria-controls="collapseFive"
+                  >
+                    Devops on Demand
+                  </button>
+                </h2>
+              </div>
+              <div
+                id="collapseFive"
+                class="collapse"
+                aria-labelledby="headingFive"
+                data-parent="#saasAccordion"
+              >
+                <div class="card-body">
+                  Designed to empower businesses with agile, scalable tech
+                  solutions tailored to their needs. By integrating seasoned
+                  Scrum Masters and Project Managers, the platform ensures
+                  seamless collaboration, rapid delivery, and efficient project
+                  governance. Access Fullstack Development Resources on the go,
+                  including expert Web developers across all levels—Junior, Mid,
+                  and Senior Developers—to dynamically scale your team and
+                  tackle any technical challenge. Whether refining a prototype
+                  or deploying enterprise-grade applications, DevOps on Demand
+                  provides the flexibility and expertise to accelerate
+                  innovation while optimizing costs and timelines.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--==========================
+      Technologies Section
+    ============================-->
+
+      <section id="clients" class="technologies-bg">
         <div class="container">
           <div class="section-header">
             <h3>Our Technologies</h3>
@@ -405,7 +521,6 @@
           </div>
 
           <div class="row no-gutters clients-wrap clearfix wow fadeInUp">
-            <!-- JavaScript -->
             <div class="col-lg-3 col-md-4 col-sm-6">
               <div class="tech-item">
                 <i class="devicon-javascript-plain colored"></i>
@@ -413,7 +528,6 @@
               </div>
             </div>
 
-            <!-- React -->
             <div class="col-lg-3 col-md-4 col-sm-6">
               <div class="tech-item">
                 <i class="devicon-react-original colored"></i>
@@ -421,7 +535,6 @@
               </div>
             </div>
 
-            <!-- PHP -->
             <div class="col-lg-3 col-md-4 col-sm-6">
               <div class="tech-item">
                 <i class="devicon-php-plain colored"></i>
@@ -429,15 +542,16 @@
               </div>
             </div>
 
-            <!-- Python -->
             <div class="col-lg-3 col-md-4 col-sm-6">
               <div class="tech-item">
                 <i class="devicon-python-plain colored"></i>
+                <!-- <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg"
+                />-->
                 <span>Python</span>
               </div>
             </div>
 
-            <!-- Java -->
             <div class="col-lg-3 col-md-4 col-sm-6">
               <div class="tech-item">
                 <i class="devicon-java-plain colored"></i>
@@ -445,7 +559,6 @@
               </div>
             </div>
 
-            <!-- C -->
             <div class="col-lg-3 col-md-4 col-sm-6">
               <div class="tech-item">
                 <i class="devicon-c-plain colored"></i>
@@ -453,7 +566,6 @@
               </div>
             </div>
 
-            <!-- .NET -->
             <div class="col-lg-3 col-md-4 col-sm-6">
               <div class="tech-item">
                 <i class="devicon-dot-net-plain colored"></i>
@@ -467,13 +579,10 @@
       <!--==========================
   Data-as-a-Service Section
 ============================-->
-      <!--==========================
-  Data-as-a-Service Section
-============================-->
-      <section id="testimonials" class="section-bg">
+      <section id="why-us" class="wow fadeIn">
         <div class="container">
           <header class="section-header text-center">
-            <h3>Data-as-a-Service</h3>
+            <h3>Data Processing and Analytics Solutions</h3>
             <p>
               Transform raw data into actionable insights with our comprehensive
               DaaS solutions
@@ -482,7 +591,7 @@
 
           <div class="row daas-content">
             <!-- Data Architecture -->
-            <div class="col-md-6 col-lg-4 wow fadeInUp">
+            <div class="col-md-6 wow fadeInUp">
               <div class="box text-center">
                 <div class="icon">
                   <i class="ion-ios-gear-outline" style="color: #ff689b"></i>
@@ -492,10 +601,7 @@
                   We design robust data infrastructures that ensure scalability,
                   security, and seamless integration. Our solutions include:
                 </p>
-                <ul
-                  class="daas-list"
-                  style="list-style-position: inside; padding-left: 0"
-                >
+                <ul class="daas-list">
                   <li>Cloud-based data warehousing</li>
                   <li>ETL pipeline development</li>
                   <li>API integration frameworks</li>
@@ -512,7 +618,7 @@
             </div>
 
             <!-- Data Analytics / Data Science -->
-            <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.1s">
+            <div class="col-md-6 wow fadeInUp" data-wow-delay="0.1s">
               <div class="box text-center">
                 <div class="icon">
                   <i
@@ -524,10 +630,7 @@
                 <p class="description">
                   Leverage advanced analytics to drive decision-making:
                 </p>
-                <ul
-                  class="daas-list"
-                  style="list-style-position: inside; padding-left: 0"
-                >
+                <ul class="daas-list">
                   <li>Predictive modeling & machine learning</li>
                   <li>Real-time business intelligence dashboards</li>
                   <li>Customer behavior analysis</li>
@@ -544,7 +647,7 @@
             </div>
 
             <!-- Automated Data Processing & Reporting -->
-            <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.2s">
+            <div class="col-md-6 wow fadeInUp" data-wow-delay="0.2s">
               <div class="box text-center">
                 <div class="icon">
                   <i
@@ -556,10 +659,7 @@
                 <p class="description">
                   Streamline operations with intelligent automation:
                 </p>
-                <ul
-                  class="daas-list"
-                  style="list-style-position: inside; padding-left: 0"
-                >
+                <ul class="daas-list">
                   <li>Workflow automation systems</li>
                   <li>AI-powered data cleansing</li>
                   <li>Custom report generation</li>
@@ -570,6 +670,33 @@
                     src="img/daas-automated-reporting.svg"
                     class="img-fluid"
                     alt="Automation"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <!-- Data Warehousing -->
+            <div class="col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+              <div class="box text-center">
+                <div class="icon">
+                  <i class="ion-ios-filing-outline" style="color: #9368ff"></i>
+                </div>
+                <h4 class="title">Data Warehousing</h4>
+                <p class="description">
+                  Enterprise-grade storage solutions for optimized data
+                  management:
+                </p>
+                <ul class="daas-list">
+                  <li>Centralized data repository management</li>
+                  <li>Historical data analysis & trend tracking</li>
+                  <li>Optimized storage solutions</li>
+                  <li>Multi-source data consolidation</li>
+                </ul>
+                <div class="daas-img">
+                  <img
+                    src="img/data-warehouse-img.svg"
+                    class="img-fluid"
+                    alt="Data Warehousing"
                   />
                 </div>
               </div>
@@ -607,10 +734,177 @@
       <!-- #daas -->
 
       <!--==========================
+      Services Section
+    ============================-->
+      <section id="services">
+        <div class="container">
+          <header class="section-header">
+            <h3>Web Hosting Assistance</h3>
+            <p>
+              Reliable, secure, and scalable hosting solutions tailored to power
+              your online presence with maximum uptime and performance.
+            </p>
+          </header>
+
+          <div class="row">
+            <div
+              class="col-md-6 col-lg-5 offset-lg-1 wow bounceInUp"
+              data-wow-duration="1.4s"
+            >
+              <div class="box">
+                <div class="icon">
+                  <i class="ion-ios-cloud-outline" style="color: #ff689b"></i>
+                </div>
+                <h4 class="title"><a href="">Managed Cloud Hosting</a></h4>
+                <p class="description">
+                  Fully managed hosting solutions handling server setup,
+                  maintenance, software updates, and 24/7 performance
+                  monitoring. Focus on your business while we manage your
+                  infrastructure.
+                </p>
+              </div>
+            </div>
+            <div
+              class="col-md-6 col-lg-5 wow bounceInUp"
+              data-wow-duration="1.4s"
+            >
+              <div class="box">
+                <div class="icon">
+                  <i class="ion-ios-pulse" style="color: #e9bf06"></i>
+                </div>
+                <h4 class="title"><a href="">Scalable Infrastructure</a></h4>
+                <p class="description">
+                  Elastic cloud resources that automatically scale with traffic
+                  demands. Handle traffic spikes effortlessly while maintaining
+                  optimal performance and cost-efficiency.
+                </p>
+              </div>
+            </div>
+
+            <div
+              class="col-md-6 col-lg-5 offset-lg-3 wow bounceInUp"
+              data-wow-delay="0.1s"
+              data-wow-duration="1.4s"
+            >
+              <div class="box">
+                <div class="icon">
+                  <i class="ion-document" style="color: #3fcdc7"></i>
+                </div>
+                <h4 class="title"><a href="">Security & Compliance</a></h4>
+                <p class="description">
+                  Enterprise-grade protection featuring SSL encryption, DDoS
+                  mitigation, and compliance with GDPR/HIPAA standards. Regular
+                  security audits and automated backups included.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--==========================
+  Use Cases Section
+============================-->
+      <section id="useCases" class="technologies-bg">
+        <div class="container">
+          <header class="section-header">
+            <h3>Our Use Cases</h3>
+            <p>
+              Transformative solutions powering modern business operations
+              across industries
+            </p>
+          </header>
+
+          <div class="row">
+            <!-- HRIS Card -->
+            <div class="col-lg-4 col-md-6 mb-4">
+              <div class="use-case-card wow fadeInUp">
+                <div class="card-image">
+                  <img
+                    src="img/hris-img.jpeg"
+                    alt="HRIS Dashboard"
+                    class="img-fluid"
+                  />
+                </div>
+                <div class="card-content">
+                  <div class="icon-wrapper">
+                    <i class="ion-ios-people-outline"></i>
+                  </div>
+                  <h4>HR Information System</h4>
+                  <p>
+                    Comprehensive human resource management solution featuring:
+                  </p>
+                  <ul class="use-case-features">
+                    <li>Automated payroll processing</li>
+                    <li>Employee self-service portal</li>
+                    <li>Benefits administration</li>
+                    <li>Performance tracking</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <!-- Timekeeping Card -->
+            <div class="col-lg-4 col-md-6 mb-4">
+              <div class="use-case-card wow fadeInUp" data-wow-delay="0.1s">
+                <div class="card-image">
+                  <img
+                    src="img/timekeeping-img.jpg"
+                    alt="Time Tracking"
+                    class="img-fluid"
+                  />
+                </div>
+                <div class="card-content">
+                  <div class="icon-wrapper">
+                    <i class="ion-ios-clock-outline"></i>
+                  </div>
+                  <h4>Timekeeping</h4>
+                  <p>Advanced workforce management system with:</p>
+                  <ul class="use-case-features">
+                    <li>Biometric attendance tracking</li>
+                    <li>Mobile clock-in/out</li>
+                    <li>Overtime management</li>
+                    <li>Real-time reporting</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <!-- E-Learning Card -->
+            <div class="col-lg-4 col-md-6 mb-4">
+              <div class="use-case-card wow fadeInUp" data-wow-delay="0.2s">
+                <div class="card-image">
+                  <img
+                    src="img/e-learning-img.jpg"
+                    alt="E-Learning"
+                    class="img-fluid"
+                  />
+                </div>
+                <div class="card-content">
+                  <div class="icon-wrapper">
+                    <i class="ion-ios-book-outline"></i>
+                  </div>
+                  <h4>E-Learning Platform</h4>
+                  <p>Interactive digital learning environment offering:</p>
+                  <ul class="use-case-features">
+                    <li>Course authoring tools</li>
+                    <li>Progress analytics</li>
+                    <li>Certification tracking</li>
+                    <li>Mobile learning</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- #services -->
+
+      <!--==========================
       Contact Section
     ============================-->
       <section id="contact">
-        <div class="container-fluid">
+        <div class="container">
           <div class="section-header">
             <h3>Contact Us</h3>
           </div>
@@ -630,15 +924,15 @@
 
             <div class="col-lg-6">
               <div class="row">
-                <div class="col-md-5 info">
+                <div class="col-md-6 info">
                   <i class="ion-ios-location-outline"></i>
                   <p>257 54 St. Brooklyn, NY 11221</p>
                 </div>
-                <div class="col-md-4 info">
+                <div class="col-md-6 info">
                   <i class="ion-ios-email-outline"></i>
                   <p>info@example.com</p>
                 </div>
-                <div class="col-md-3 info">
+                <div class="col-md-6 info">
                   <i class="ion-ios-telephone-outline"></i>
                   <p>+1 1111 11111 11</p>
                 </div>
@@ -744,7 +1038,7 @@
                 <li><a href="#services" class="scrollto">Services</a></li>
                 <li><a href="#why-us" class="scrollto">Industries</a></li>
                 <li><a href="#clients" class="scrollto">Technologies</a></li>
-                <li><a href="#testimonials" class="scrollto">DaaS</a></li>
+                <li><a href="#testimonials" class="scrollto">Use Cases</a></li>
                 <li><a href="#contact" class="scrollto">Contact Us</a></li>
               </ul>
             </div>

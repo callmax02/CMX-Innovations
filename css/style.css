@@ -9,6 +9,157 @@
 # Custom Styles
 --------------------------------------------------------------*/
 
+/* Use Cases Section Styling */
+.use-cases-section {
+  background: #f8f9fa;
+  padding: 60px 0;
+}
+
+.use-case-card {
+  background: white;
+  border-radius: 15px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.use-case-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.15);
+}
+
+.card-image {
+  height: 200px;
+  overflow: hidden;
+  background: #e9ecef;
+}
+
+.card-image img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.card-content {
+  padding: 25px;
+  position: relative;
+}
+
+.icon-wrapper {
+  position: absolute;
+  top: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 60px;
+  background: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.icon-wrapper i {
+  font-size: 30px;
+  color: #3fcdc7;
+}
+
+.use-case-card h4 {
+  color: #2a2a2a;
+  margin-top: 20px;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.use-case-card p {
+  color: #6c757d;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.use-case-features {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.use-case-features li {
+  padding: 8px 0;
+  color: #495057;
+  position: relative;
+  padding-left: 25px;
+}
+
+.use-case-features li:before {
+  content: "✓";
+  color: #3fcdc7;
+  position: absolute;
+  left: 0;
+  font-weight: bold;
+}
+
+/* DaaS Section - White Text and Icon Styling */
+#why-us {
+  color: #fff; /* Sets all text color to white within the section */
+}
+
+#why-us .box .description,
+#why-us .box .title a {
+  color: #fff; /* Ensures description text and title links are white */
+}
+
+#why-us .icon i[class^="ion-ios"] {
+  color: #fff !important; /* Overrides inline icon colors to white */
+}
+
+/* <nav> Section */
+
+/* Disabled nav link styles */
+.main-nav .disabled {
+  pointer-events: none;
+  cursor: not-allowed;
+  color: #6c757d !important;
+  text-decoration: line-through !important;
+  opacity: 0.7;
+  transition: none !important; /* Disable any hover transitions */
+}
+
+.main-nav .disabled:hover {
+  color: #6c757d !important;
+  text-decoration: line-through !important;
+}
+
+/* SaaS Section */
+
+/* Custom CSS for SaaS Accordion */
+.card-header {
+  background-color: #004a99 !important;
+  border-radius: 0 !important;
+}
+
+.btn-link {
+  color: #ffffff !important;
+  text-decoration: none !important;
+  width: 100%;
+  text-align: left;
+  padding: 1rem;
+  font-weight: 600;
+}
+
+.btn-link:hover {
+  color: #f2f0ef !important;
+  text-decoration: underline !important;
+}
+
+.btn-link:not(.collapsed)::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23ffffff'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+}
+
+.btn-link.collapsed::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23ffffff'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+}
+
 /* Services Section */
 .services-container {
   min-height: 400px;
@@ -107,6 +258,11 @@
 }
 
 /* Technologies Section */
+
+.technologies-bg {
+  background: #ecf5ff;
+}
+
 .tech-item {
   text-align: center;
   padding: 30px 0;
@@ -137,16 +293,18 @@
 
 .daas-list li {
   padding: 5px 0;
-  position: relative;
-  padding-left: 20px;
+  text-align: center; /* Center the content */
+  list-style: none; /* Remove default list styling */
+  padding-left: 0; /* Remove original left padding */
 }
 
 .daas-list li:before {
   content: "\f00c";
   font-family: FontAwesome;
-  position: absolute;
-  left: 0;
   color: #3fcdc7;
+  margin-right: 8px; /* Space between checkmark and text */
+  display: inline-block; /* Align checkmark inline with text */
+  /* Remove absolute positioning and left:0 */
 }
 
 .benefit-box {
@@ -157,7 +315,8 @@
 
 .benefit-box i {
   font-size: 40px;
-  color: #3fcdc7;
+  /* color: #3fcdc7; */
+  color: #fff;
   margin-bottom: 15px;
 }
 
@@ -166,13 +325,13 @@
 }
 
 /* DaaS Section Image Adjustments */
-#testimonials .daas-img {
+#why-us .daas-img {
   display: flex;
   justify-content: center;
   margin: 20px 0;
 }
 
-#testimonials .daas-img img {
+#why-us .daas-img img {
   max-width: 250px; /* Adjust this value to control image size */
   height: auto;
   object-fit: contain;
@@ -762,6 +921,63 @@ h6 {
 #about .about-extra h4 {
   font-weight: 600;
   font-size: 24px;
+}
+
+/* Our Use Cases Section */
+
+#useCases {
+  padding: 60px 0 40px 0;
+  box-shadow: inset 0px 0px 12px 0px rgba(0, 0, 0, 0.1);
+}
+
+#useCases .box {
+  padding: 30px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  margin: 0 10px 40px 10px;
+  background: #fff;
+  box-shadow: 0 10px 29px 0 rgba(68, 88, 144, 0.1);
+  transition: all 0.3s ease-in-out;
+}
+
+#useCases .box:hover {
+  -webkit-transform: translateY(-5px);
+  transform: translateY(-5px);
+}
+
+#useCases .icon {
+  position: absolute;
+  left: -10px;
+  top: calc(50% - 32px);
+}
+
+#useCases .icon i {
+  font-size: 64px;
+  line-height: 1;
+  transition: 0.5s;
+}
+
+#useCases .title {
+  margin-left: 40px;
+  font-weight: 700;
+  margin-bottom: 15px;
+  font-size: 18px;
+}
+
+#useCases .title a {
+  color: #111;
+}
+
+#useCases .box:hover .title a {
+  color: #007bff;
+}
+
+#useCases .description {
+  font-size: 14px;
+  margin-left: 40px;
+  line-height: 24px;
+  margin-bottom: 0;
 }
 
 /* Services Section
