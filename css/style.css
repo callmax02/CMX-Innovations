@@ -611,7 +611,8 @@ h6 {
 #intro {
   width: 100%;
   position: relative;
-  background: url("../img/intro-bg.png") center bottom no-repeat;
+  /* background: url("../img/intro-bg.png") center bottom no-repeat; */
+  background: url("../img/dalle-intro-banner.svg") center bottom no-repeat;
   background-size: cover;
   padding: 200px 0 120px 0;
 }
@@ -622,8 +623,27 @@ h6 {
 }
 
 #intro .intro-info {
-  width: 50%;
-  float: left;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  width: 100%;
+}
+
+#intro .intro-info {
+  background: rgba(40, 40, 40, 0.7); /* Grayish black with 70% opacity */
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); /* Optional: Adds depth */
+}
+
+/* Ensure text remains white */
+#intro .intro-info h2,
+#intro .intro-info .btn-get-started,
+#intro .intro-info .btn-services {
+  position: relative; /* Ensures text stays above background */
 }
 
 #intro .intro-info h2 {
