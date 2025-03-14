@@ -9,6 +9,18 @@
 # Custom Styles
 --------------------------------------------------------------*/
 
+/* Services Section */
+
+.services-bg {
+  background: #ecf5ff;
+}
+
+/* Web Hosting Section */
+
+.web-hosting-bg {
+  background: #ecf5ff;
+}
+
 /* Use Cases Section Styling */
 .use-cases-section {
   background: #f8f9fa;
@@ -100,6 +112,20 @@
 }
 
 /* DaaS Section - White Text and Icon Styling */
+#daas {
+  color: #fff; /* Sets all text color to white within the section */
+}
+
+#daas .box .description,
+#daas .box .title a {
+  color: #fff; /* Ensures description text and title links are white */
+}
+
+#daas .icon i[class^="ion-ios"] {
+  color: #fff !important; /* Overrides inline icon colors to white */
+}
+
+/* DaaS Section - White Text and Icon Styling */
 #why-us {
   color: #fff; /* Sets all text color to white within the section */
 }
@@ -110,6 +136,20 @@
 }
 
 #why-us .icon i[class^="ion-ios"] {
+  color: #fff !important; /* Overrides inline icon colors to white */
+}
+
+/* Industries Section - White Text and Icon Styling */
+#industries {
+  color: #fff; /* Sets all text color to white within the section */
+}
+
+#industries .box .description,
+#industries .box .title a {
+  color: #fff; /* Ensures description text and title links are white */
+}
+
+#industries .icon i[class^="ion-ios"] {
   color: #fff !important; /* Overrides inline icon colors to white */
 }
 
@@ -257,6 +297,12 @@
   height: 450px; /* Adjust as needed */
 }
 
+/* Our Use Cases Section */
+
+.useCases-bg {
+  background: #ecf5ff;
+}
+
 /* Technologies Section */
 
 .technologies-bg {
@@ -332,6 +378,41 @@
 }
 
 #why-us .daas-img img {
+  max-width: 250px; /* Adjust this value to control image size */
+  height: auto;
+  object-fit: contain;
+}
+
+.icon i {
+  font-size: 2.5em; /* Increases icon size by 250% */
+}
+
+/* Daas Section */
+/* DaaS Section Image Adjustments */
+#daas .daas-img {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+#daas .daas-img img {
+  max-width: 250px; /* Adjust this value to control image size */
+  height: auto;
+  object-fit: contain;
+}
+
+.icon i {
+  font-size: 2.5em; /* Increases icon size by 250% */
+}
+
+/* Industries Section Image Adjustments */
+#industries .daas-img {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+#industries .daas-img img {
   max-width: 250px; /* Adjust this value to control image size */
   height: auto;
   object-fit: contain;
@@ -1038,6 +1119,63 @@ h6 {
   margin-bottom: 0;
 }
 
+/* Web Hosting Section */
+
+#web-hosting {
+  padding: 60px 0 40px 0;
+  box-shadow: inset 0px 0px 12px 0px rgba(0, 0, 0, 0.1);
+}
+
+#web-hosting .box {
+  padding: 30px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  margin: 0 10px 40px 10px;
+  background: #fff;
+  box-shadow: 0 10px 29px 0 rgba(68, 88, 144, 0.1);
+  transition: all 0.3s ease-in-out;
+}
+
+#web-hosting .box:hover {
+  -webkit-transform: translateY(-5px);
+  transform: translateY(-5px);
+}
+
+#web-hosting .icon {
+  position: absolute;
+  left: -10px;
+  top: calc(50% - 32px);
+}
+
+#web-hosting .icon i {
+  font-size: 64px;
+  line-height: 1;
+  transition: 0.5s;
+}
+
+#web-hosting .title {
+  margin-left: 40px;
+  font-weight: 700;
+  margin-bottom: 15px;
+  font-size: 18px;
+}
+
+#web-hosting .title a {
+  color: #111;
+}
+
+#web-hosting .box:hover .title a {
+  color: #007bff;
+}
+
+#web-hosting .description {
+  font-size: 14px;
+  margin-left: 40px;
+  line-height: 24px;
+  margin-bottom: 0;
+}
+
 #why-us {
   padding: 60px 0;
   background: #004a99;
@@ -1106,6 +1244,159 @@ h6 {
 }
 
 #why-us .counters p {
+  padding: 0;
+  margin: 0 0 20px 0;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  color: #cce5ff;
+}
+
+/* Industries Section */
+#industries {
+  padding: 60px 0;
+  background: #004a99;
+}
+
+#industries .section-header h3,
+#industries .section-header p {
+  color: #fff;
+}
+
+#industries .card {
+  background: #00458f;
+  border-color: #00458f;
+  border-radius: 10px;
+  margin: 0 15px;
+  padding: 15px 0;
+  text-align: center;
+  color: #fff;
+  transition: 0.3s ease-in-out;
+  height: 100%;
+}
+
+#industries .card:hover {
+  background: #003b7a;
+  border-color: #003b7a;
+}
+
+#industries .card i {
+  font-size: 48px;
+  padding-top: 15px;
+  color: #bfddfe;
+}
+
+#industries .card h5 {
+  font-size: 22px;
+  font-weight: 600;
+}
+
+#industries .card p {
+  font-size: 15px;
+  color: #d8eafe;
+}
+
+#industries .card .readmore {
+  color: #fff;
+  font-weight: 600;
+  display: inline-block;
+  transition: 0.3s ease-in-out;
+  border-bottom: #00458f solid 2px;
+}
+
+#industries .card .readmore:hover {
+  border-bottom: #fff solid 2px;
+}
+
+#industries .counters {
+  padding-top: 40px;
+}
+
+#industries .counters span {
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  font-size: 48px;
+  display: block;
+  color: #fff;
+}
+
+#industries .counters p {
+  padding: 0;
+  margin: 0 0 20px 0;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  color: #cce5ff;
+}
+
+/* DaaS Section */
+
+#daas {
+  padding: 60px 0;
+  background: #004a99;
+}
+
+#daas .section-header h3,
+#daas .section-header p {
+  color: #fff;
+}
+
+#daas .card {
+  background: #00458f;
+  border-color: #00458f;
+  border-radius: 10px;
+  margin: 0 15px;
+  padding: 15px 0;
+  text-align: center;
+  color: #fff;
+  transition: 0.3s ease-in-out;
+  height: 100%;
+}
+
+#daas .card:hover {
+  background: #003b7a;
+  border-color: #003b7a;
+}
+
+#daas .card i {
+  font-size: 48px;
+  padding-top: 15px;
+  color: #bfddfe;
+}
+
+#daas .card h5 {
+  font-size: 22px;
+  font-weight: 600;
+}
+
+#daas .card p {
+  font-size: 15px;
+  color: #d8eafe;
+}
+
+#daas .card .readmore {
+  color: #fff;
+  font-weight: 600;
+  display: inline-block;
+  transition: 0.3s ease-in-out;
+  border-bottom: #00458f solid 2px;
+}
+
+#daas .card .readmore:hover {
+  border-bottom: #fff solid 2px;
+}
+
+#daas .counters {
+  padding-top: 40px;
+}
+
+#daas .counters span {
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  font-size: 48px;
+  display: block;
+  color: #fff;
+}
+
+#daas .counters p {
   padding: 0;
   margin: 0 0 20px 0;
   font-family: "Montserrat", sans-serif;
@@ -1460,6 +1751,94 @@ h6 {
   transition: all 0.4s ease-in-out;
 }
 
+/* Technologies Section
+--------------------------------*/
+
+#technologies {
+  padding: 60px 0;
+  box-shadow: inset 0px 0px 12px 0px rgba(0, 0, 0, 0.1);
+}
+
+#technologies .clients-wrap {
+  /* border-top: 1px solid #d6eaff; */
+  /* border-left: 1px solid #d6eaff; */
+  margin-bottom: 30px;
+}
+
+#technologies .client-logo {
+  padding: 64px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-right: 1px solid #d6eaff;
+  border-bottom: 1px solid #d6eaff;
+  overflow: hidden;
+  background: #fff;
+  height: 160px;
+}
+
+#technologies .client-logo:hover img {
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
+#technologies img {
+  transition: all 0.4s ease-in-out;
+}
+
+/* SaaS Section
+--------------------------------*/
+
+#saas {
+  padding: 60px 0;
+  box-shadow: inset 0px 0px 12px 0px rgba(0, 0, 0, 0.1);
+}
+
+#saas .clients-wrap {
+  /* border-top: 1px solid #d6eaff; */
+  /* border-left: 1px solid #d6eaff; */
+  margin-bottom: 30px;
+}
+
+#saas .client-logo {
+  padding: 64px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-right: 1px solid #d6eaff;
+  border-bottom: 1px solid #d6eaff;
+  overflow: hidden;
+  background: #fff;
+  height: 160px;
+}
+
+#saas .client-logo:hover img {
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
+#saas img {
+  transition: all 0.4s ease-in-out;
+}
+
 /* Contact Section
 --------------------------------*/
 
@@ -1775,6 +2154,16 @@ h6 {
   }
 
   #why-us .card {
+    margin: 0;
+  }
+
+  /* Industries Section */
+  #industries .card {
+    margin: 0;
+  }
+
+  /* DaaS Section */
+  #daas .card {
     margin: 0;
   }
 }
