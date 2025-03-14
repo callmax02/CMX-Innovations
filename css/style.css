@@ -612,7 +612,7 @@ h6 {
   width: 100%;
   position: relative;
   /* background: url("../img/intro-bg.png") center bottom no-repeat; */
-  background: url("../img/intro-banner-1.jpg") center bottom no-repeat;
+  background: url("../img/intro-banner-2-darker-3.png") center bottom no-repeat;
   background-size: cover;
   padding: 200px 0 120px 0;
 }
@@ -655,7 +655,9 @@ h6 {
 }
 
 #intro .intro-info h2 span {
-  color: #74b5fc;
+  /* color: #74b5fc; */ /* standard color */
+  /* color: #04aaf5; */ /* Callmax Lightblue */
+  color: #ade8f4;
   text-decoration: underline;
 }
 
