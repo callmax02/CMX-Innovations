@@ -305,6 +305,17 @@
 
 /* Technologies Section */
 
+/* Add custom CSS for smooth transitions */
+.tab-pane {
+  transition: opacity 0.3s linear !important;
+}
+.tech-item {
+  min-height: 120px; /* Ensure consistent item height */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 .technologies-bg {
   background: #ecf5ff;
 }
