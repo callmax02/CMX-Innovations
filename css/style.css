@@ -8,6 +8,29 @@
 /*--------------------------------------------------------------
 # Custom Styles
 --------------------------------------------------------------*/
+
+/* About Us Section - Vertical Centering */
+@media (min-width: 992px) {
+  #about .about-container {
+    display: flex;
+    align-items: center; /* Vertically center columns */
+    /* min-height: 100vh; */ /* Optional: Only if section needs full viewport height */
+  }
+
+  #about .background {
+    display: flex;
+    align-items: center; /* Center image vertically in its column */
+  }
+}
+
+/* Maintain default stacking on mobile */
+@media (max-width: 991px) {
+  #about .background {
+    margin: 0 auto 30px; /* Center image horizontally */
+    /* max-width: 80%; */ /* Optional: Control image size on mobile */
+  }
+}
+
 /* Intro Section */
 .margin-bot-20 {
   margin-bottom: 50px;
